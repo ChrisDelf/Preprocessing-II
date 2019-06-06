@@ -27,7 +27,44 @@
 
  }
 
+.leftRight (@animSpeed, @animRest)
 
+{
+
+    animation: square-to-circle @animSpeed @animRest infinite cubic-bezier(1,.015,.295,1.225) alternate;
+
+
+}
+
+
+
+@keyframes square-to-circle {
+  0%  {
+
+    background-color: #3FE0D0;
+    transform: rotate (0deg);
+  }
+  25%  {
+
+    background: #7EF9FF;
+    transform: rotate (45deg);
+  }
+  50%  {
+
+    background: #4F97A3;
+    transform: rotate (90deg);
+  }
+  75%  {
+
+    background: #008ECC;
+    transform: rotate (135deg);
+  }
+  100% {
+
+    background: #1034A6;
+    transform: rotate (180deg);
+  }
+}
 
 
 

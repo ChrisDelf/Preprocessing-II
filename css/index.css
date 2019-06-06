@@ -1,6 +1,28 @@
 .mainBroader {
   border-top: 2px dashed #C0C0C0;
 }
+@keyframes square-to-circle {
+  0% {
+    background-color: #3FE0D0;
+    transform: rotate 0deg;
+  }
+  25% {
+    background: #7EF9FF;
+    transform: rotate 45deg;
+  }
+  50% {
+    background: #4F97A3;
+    transform: rotate 90deg;
+  }
+  75% {
+    background: #008ECC;
+    transform: rotate 135deg;
+  }
+  100% {
+    background: #1034A6;
+    transform: rotate 180deg;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -353,6 +375,7 @@ nav {
   text-align: center;
   font-size: 2rem;
   padding-top: 15px;
+  animation: square-to-circle 2s 0.1s infinite cubic-bezier(1, 0.015, 0.295, 1.225) alternate;
 }
 @media (max-width: 500px) {
   .btn {
