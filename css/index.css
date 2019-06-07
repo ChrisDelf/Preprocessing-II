@@ -1,25 +1,25 @@
 .mainBroader {
-  border-top: 2px dashed #C0C0C0;
+  border-top: 2px dashed #c0c0c0;
 }
 @keyframes square-to-circle {
   0% {
-    background-color: #3FE0D0;
+    background-color: #3fe0d0;
     transform: rotate 0deg;
   }
   25% {
-    background: #7EF9FF;
+    background: #7ef9ff;
     transform: rotate 45deg;
   }
   50% {
-    background: #4F97A3;
+    background: #4f97a3;
     transform: rotate 90deg;
   }
   75% {
-    background: #008ECC;
+    background: #008ecc;
     transform: rotate 135deg;
   }
   100% {
-    background: #1034A6;
+    background: #1034a6;
     transform: rotate 180deg;
   }
 }
@@ -198,9 +198,7 @@ img {
   justify-content: space-between;
   flex-wrap: wrap;
   height: 100px;
-  padding-top: 30px;
-  margin-left: 30px;
-  margin-right: 30px;
+  align-items: center;
 }
 @media (max-width: 500px) {
   .headerCon {
@@ -221,7 +219,7 @@ img {
   }
 }
 nav a {
-  text-decoration: none ;
+  text-decoration: none;
   color: black;
   display: inline-flex;
   font-size: 2rem;
@@ -302,6 +300,7 @@ nav {
 @media (max-width: 500px) {
   .home .inverse-content .img-content {
     order: 8;
+    display: none;
   }
 }
 .home .content-destination {
@@ -335,7 +334,7 @@ nav {
 .busImageCon {
   display: flex;
   justify-content: center;
-  border-top: 2px dashed #C0C0C0;
+  border-top: 2px dashed #c0c0c0;
 }
 .busImage {
   max-width: 100%;
